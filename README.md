@@ -98,6 +98,9 @@ Run App By Full Path to Server.py (in Double Quotes) in IBR folder, while stayin
 <p style="display: flex;align-items: center;justify-content: center;">
   <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Enjoy.png"/>
  </p>
+ 
+### Video
+[![Watch the video](https://img.youtube.com/vi/8j4D0KCJ5Vc/hqdefault.jpg)](https://www.youtube.com/watch?v=8j4D0KCJ5Vc)
 
 ### Advance usage
 
