@@ -23,6 +23,12 @@ This is done on windows (Windows 10: x64 Bit) . If you want to implement follow 
 CPU support (I Used This):
 
 Navigate to App/Python Folder. (You find Python.exe there.) Run CMD at that location and run following command
+
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Type CMD address bar.png"/>
+ </p>
+
+
 ```bash
 python.exe -m pip install rembg
 ```
