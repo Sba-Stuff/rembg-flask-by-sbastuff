@@ -1,12 +1,6 @@
 # Rembg
 
-[![Downloads](https://pepy.tech/badge/rembg)](https://pepy.tech/project/rembg)
-[![Downloads](https://pepy.tech/badge/rembg/month)](https://pepy.tech/project/rembg/month)
-[![Downloads](https://pepy.tech/badge/rembg/week)](https://pepy.tech/project/rembg/week)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://img.shields.io/badge/License-MIT-blue.svg)
-[![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/KenjieDec/RemBG)
-
-Rembg is a tool to remove images background. That is it.
+Rembg Flask is a flask based web tool to remove background from images.
 
 <p style="display: flex;align-items: center;justify-content: center;">
   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-1.jpg" width="100" />
@@ -35,28 +29,36 @@ Rembg is a tool to remove images background. That is it.
   <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.out.png" width="100" />
 </p>
 
-**If this project has helped you, please consider making a [donation](https://www.buymeacoffee.com/danielgatis).**
+**If this project has helped you, please consider making Sba Stuff a [donation](https://www.buymeacoffee.com/sbastuff).**
+
+### Configuration of Python
+This is done on windows (Windows 10: x64 Bit) . If you want to implement follow same workflow.
+1. Python 3.7.9 (x64 Bit) Portable (Released On 2020-10-02	Size: 35.6 MB): [Download From Source Forge](https://sourceforge.net/projects/portable-python/files/Portable%20Python%203.7/)
+2. Extract Downloaded Python Portable Exe. You Got lots of files and folders. Delete every folder except **App/Python/**
 
 ### Installation
 
-CPU support:
+CPU support (I Used This):
 
+Navigate to App/Python Folder. (You find Python.exe there.) Run CMD at that location and run following commmand
 ```bash
-pip install rembg
+python.exe -m pip install rembg
 ```
 
-GPU support:
+GPU support (If you are rich enough to buy Nividia CUDA GPUS, you can also try this.):
 
 ```bash
 pip install rembg[gpu]
 ```
 
-### Usage as a cli
+Download ZIP of this file and extract in IBR Folder in *App/Python/*
 
-Remove the background from a remote image
+### Usage as a Flask
+
+Run CMD at location **App/Python/** and then run **Server.py** Present in IBR Folder using given command: 
 
 ```bash
-curl -s http://input.png | rembg i > output.png
+"Full Path\"Python.exe "Full Path\IBR\Server.py"
 ```
 
 Remove the background from a local file
