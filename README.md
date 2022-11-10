@@ -54,11 +54,7 @@ python.exe -m pip install flask
 <p style="display: flex;align-items: center;justify-content: center;">
   <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Install%20Flask%20Also.png"/>
  </p>
-Run CMD at location **App/Python/** and then run **Server.py** Present in IBR Folder using given command: 
 
-```bash
-"Full Path\"Python.exe "Full Path\IBR\Server.py"
-```
 
 ### Models
 
