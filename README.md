@@ -1,4 +1,4 @@
-# Rembg
+# Rembg Flask Based Web App
 
 Rembg Flask is a flask based web tool to remove background from images.
 
