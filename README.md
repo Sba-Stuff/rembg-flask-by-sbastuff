@@ -34,152 +34,51 @@ Rembg Flask is a flask based web tool to remove background from images.
 ### Configuration of Python
 This is done on windows (Windows 10: x64 Bit) . If you want to implement follow same workflow.
 1. Python 3.7.9 (x64 Bit) Portable (Released On 2020-10-02	Size: 35.6 MB): [Download From Source Forge](https://sourceforge.net/projects/portable-python/files/Portable%20Python%203.7/)
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Download%20Python.png"/>
+ </p>
+ 
 2. Extract Downloaded Python Portable Exe. You Got lots of files and folders. Delete every folder except **App/Python/**
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Kepp%20App%20Python%20Folder%20Only.png"/>
+ </p>
 
 ### Installation
 
 CPU support (I Used This):
 
-Navigate to App/Python Folder. (You find Python.exe there.) Run CMD at that location and run following commmand
+Navigate to App/Python Folder. (You find Python.exe there.) Run CMD at that location and run following command
 ```bash
 python.exe -m pip install rembg
 ```
-
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Install%20RemBG.png"/>
+ </p>
+ 
+ 
 GPU support (If you are rich enough to buy Nividia CUDA GPUS, you can also try this.):
 
 ```bash
 pip install rembg[gpu]
 ```
 
-Download ZIP of this file and extract in IBR Folder in *App/Python/*
+Download ZIP of this file and extract contents in IBR Folder in **App/Python/IBR/**
 
 ### Usage as a Flask
 
+Install Flask Using this Command. This is as same as you did for RemBG.
+```bash
+python.exe -m pip install flask
+```
 Run CMD at location **App/Python/** and then run **Server.py** Present in IBR Folder using given command: 
 
 ```bash
 "Full Path\"Python.exe "Full Path\IBR\Server.py"
 ```
 
-Remove the background from a local file
-
-```bash
-rembg i path/to/input.png path/to/output.png
-```
-
-Remove the background from all images in a folder
-
-```bash
-rembg p path/to/input path/to/output
-```
-
-### Usage as a server
-
-Start the server
-
-```bash
-rembg s
-```
-
-And go to:
-
-```
-http://localhost:5000/docs
-```
-
-Image with background:
-
-```
-https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gull_portrait_ca_usa.jpg/1280px-Gull_portrait_ca_usa.jpg
-```
-
-Image without background:
-
-```
-http://localhost:5000/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gull_portrait_ca_usa.jpg/1280px-Gull_portrait_ca_usa.jpg
-```
-
-Also you can send the file as a FormData (multipart/form-data):
-
-```html
-<form
-    action="http://localhost:5000"
-    method="post"
-    enctype="multipart/form-data"
->
-    <input type="file" name="file" />
-    <input type="submit" value="upload" />
-</form>
-```
-
-### Usage as a library
-
-Input and output as bytes
-
-```python
-from rembg import remove
-
-input_path = 'input.png'
-output_path = 'output.png'
-
-with open(input_path, 'rb') as i:
-    with open(output_path, 'wb') as o:
-        input = i.read()
-        output = remove(input)
-        o.write(output)
-```
-
-Input and output as a PIL image
-
-```python
-from rembg import remove
-from PIL import Image
-
-input_path = 'input.png'
-output_path = 'output.png'
-
-input = Image.open(input_path)
-output = remove(input)
-output.save(output_path)
-```
-
-Input and output as a numpy array
-
-```python
-from rembg import remove
-import cv2
-
-input_path = 'input.png'
-output_path = 'output.png'
-
-input = cv2.imread(input_path)
-output = remove(input)
-cv2.imwrite(output_path, output)
-```
-
-### Usage as a docker
-
-Try this:
-
-```
-docker run -p 5000:5000 danielgatis/rembg s
-```
-
-Image with background:
-
-```
-https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gull_portrait_ca_usa.jpg/1280px-Gull_portrait_ca_usa.jpg
-```
-
-Image without background:
-
-```
-http://localhost:5000/?url=https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gull_portrait_ca_usa.jpg/1280px-Gull_portrait_ca_usa.jpg
-```
-
 ### Models
 
-All models are downloaded and saved in the user home folder in the `.u2net` directory.
+On Windows, Type **%Username%** in Address Bar of Explorer, Hit Enter. Create a Folder Named  `.u2net` there. Download all these Models given below and place ins this `.u2net` folder.
 
 The available models are:
 
