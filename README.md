@@ -2,32 +2,7 @@
 
 Rembg Flask is a flask based web tool to remove background from images.
 
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-1.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-1.out.png" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-2.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-2.out.png" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-3.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/car-3.out.png" width="100" />
-</p>
 
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-1.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-1.out.png" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-2.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-2.out.png" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-3.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/animal-3.out.png" width="100" />
-</p>
-
-<p style="display: flex;align-items: center;justify-content: center;">
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-1.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-1.out.png" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-2.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-2.out.png" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.jpg" width="100" />
-  <img src="https://raw.githubusercontent.com/danielgatis/rembg/master/examples/girl-3.out.png" width="100" />
-</p>
 
 **If this project has helped you, please consider making Sba Stuff a [donation](https://www.buymeacoffee.com/sbastuff).**
 
@@ -100,8 +75,25 @@ The available models are:
   <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/placemodels.png"/>
  </p>
 
+### Download And Install Flask Based Image Background Remover (This Repository)
+Download this repo, And Create Folder **IBR** near python.exe (in **App/Python/**). And Extract Contents There. (Server.py and two folders i.e. Static and Template).
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/IBR%20Extraction.png"/>
+ </p>
 
-
+### Execute The Server
+Run App By Full Path to Server.py (in Double Quotes) in IBR folder, while staying in Python.exe directory. Copy URL Given in Console CMD. And Paste in Browser.
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Gharmas.png"/>
+ </p>
+ <p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/CopyURL.png"/>
+ </p>
+ 
+### Enjoy The App
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img src="https://github.com/Sba-Stuff/rembg-flask-by-sbastuff/blob/main/Guide/Enjoy.png"/>
+ </p>
 
 ### Advance usage
 
